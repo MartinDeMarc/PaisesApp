@@ -28,8 +28,4 @@ export class PorCapitalComponent {
       }
     );
   }
-
-  sugerencias(termino: string) {
-    this.hayError = false;
-  }
 }
