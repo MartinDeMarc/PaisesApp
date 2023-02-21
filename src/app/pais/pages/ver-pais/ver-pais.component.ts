@@ -24,13 +24,5 @@ export class VerPaisComponent implements OnInit {
         tap(console.log)
       )
       .subscribe((pais) => (this.pais = pais)); //Access observable donde estan los parametros
-
-    // this.activatedRoute.params.subscribe(({ id }) => {
-    //   console.log(id);
-
-    //   this.PaisService.getPaisPorCodigo(id).subscribe((pais) => {
-    //     console.log(pais);
-    //   });
-    // });
   }
 }

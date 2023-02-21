@@ -1,10 +1,13 @@
-<h2>Por Region</h2>
+<h2>Buscar por Region</h2>
+<h4>{{regionActiva | titlecase}}</h4>
 <hr>
 
+<h2>Seleccione la región</h2>
 <div class="row">
   <div class="col">
-    <form autocomplete="off">
-      <input type="text" placeholder="Buscar por region..." name="termino" class="form-control">
-    </form>
+    <button *ngFor="let region of regiones" class="btn btn-outline-primary" [class]="getClaseCSS(region)"
+      (click)="activarRegion(region)">{{region}}
+    </button>
+
   </div>
 </div>
